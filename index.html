@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catalogue organisé des jeux Xbox originale et Xbox 360.">
+  <title>Catalogue Xbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">BIBLIOTHÈQUE DE JEUX</div>
+    <h1>Catalogue <span>Xbox</span></h1>
+    <p>Xbox originale · Xbox 360 · Arcade · Indie</p>
+    <div class="search-row">
+      <input id="search" type="search" placeholder="Rechercher un jeu…" aria-label="Rechercher un jeu">
+      <select id="platform" aria-label="Filtrer par console">
+        <option value="">Toutes les consoles</option>
+        <option value="Xbox Original">Xbox originale</option>
+        <option value="Xbox 360">Xbox 360</option>
+      </select>
+      <select id="type" aria-label="Filtrer par catégorie">
+        <option value="">Toutes les catégories</option>
+        <option value="Classique">Jeux classiques</option>
+        <option value="Arcade">Arcade</option>
+        <option value="Indie">Indie</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div class="toolbar">
+      <h2>Les jeux</h2>
+      <span id="count">Chargement du catalogue…</span>
+    </div>
+    <div id="status" class="status">Chargement des données du catalogue…</div>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <nav id="pagination" class="pagination" aria-label="Pagination"></nav>
+  </main>
+  <footer>Catalogue informatif — aucune bande-annonce intégrée.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
